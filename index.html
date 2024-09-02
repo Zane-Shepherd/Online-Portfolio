@@ -1,233 +1,161 @@
 <html>
     <head>
         <title>Online Portfolio</title>
+
         <style>
-            body {
-                height: 100%;
-                margin: 0;
-                background-color:rgb(18, 18, 18);
-            }
-            h1 {
-                font-size: 7vh;
-                color: rgb(255,255,255);
-                font-family:Garamond;
-            }
-            h2 {
-                font-size: 3.8vh;
-                font-family: Calibri;
-                color: rgb(179,179,179);
-                vertical-align: middle;
-            }
-            h3 {
-                font-size: 2.35vh;
-                font-family: Calibri;
-                color: rgb(179,179,179);
-                margin-top: 0;
-                margin-bottom: 0;
-                z-index: 1000;
-            }
-            #TopBar {
-                width: 100%;
-                height: 9%;
-                background-color: rgb(24, 24, 24);
-                display: flex;
-                flex-direction: row-reverse;
-                position: sticky;
-                top: 0;
-                z-index: 2;
-            }
-            .links {
-                margin-right: 2%;
-            }
-            .email {
-                background-color: rgb(24, 24, 24);
-                width: max-content;
-                height: 100%;
-                text-align: center;
-                margin-right: 3%;
-                border: 0;
-                padding-top: 4%;
-            }
-            .email:hover {
-                background-color: rgb(40, 40, 40);
-            }
-            .resume {
-                background-color: rgb(24,24,24);
-                width: max-content;
-                height: 100%;
-                text-align: center;
-                margin-right: 1%;
-                border: 0;
-            }
-            .resume:hover {
-                background-color: rgb(40, 40, 40);
-            }
-            .linkedin {
-                background-color: rgb(24, 24, 24);
-                width: max-content;
-                height: 100%;
-                text-align: center;
-                margin-right: 1%;
-                border:0;
-            }
-            .linkedin:hover {
-                background-color: rgb(40, 40, 40);
-            }
-            #title {
-                text-align: center;
-                padding-top: 3%;
-            }
-            #subtitle {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 15%;
-                margin-top: 2%;
-                margin-bottom: 2%;
-            }
-            #slide1 {
-                background-color: rgb(64, 64, 64);
-                position: relative;
-                float: left;
-                text-align: center;
-                width: 32.5%;
-                height: 75%;
-                padding-left: 6%;
-                padding-right: 6%;
-                padding-bottom: 6.5%;
-                margin-top: 3%;
-                margin-left: 3%;
-                margin-bottom: 3%;
-                margin-right: 1.5%;
-                z-index: 1;
-            }
-            #slide2 {
-                background-color: rgb(64, 64, 64);
-                position: relative;
-                float: right;
-                text-align: center;
-                width: 32.5%;
-                height: 75%;
-                padding-left: 6%;
-                padding-right: 6%;
-                padding-bottom: 6.5%;                
-                padding-left: 6%;
-                padding-right: 6%;
-                padding-bottom: 6.5%;
-                margin-top: 3%;
-                margin-left: 1.5%;
-                margin-bottom: 3%;
-                margin-right: 3%; 
-                z-index: 1;           
-            }
-            #slide3 {
-                background-color: rgb(64, 64, 64);
-                position: relative;
-                float: left;
-                text-align: center;
-                width: 32.5%;
-                height: 75%; 
-                padding-left: 6%;
-                padding-right: 6%;
-                padding-bottom: 6.5%;                
-                margin-top: 3%;
-                margin-left: 3%;
-                margin-bottom: 3%;
-                margin-right: 1.5%;
-                z-index: 1;           
-                }
-            #slide4 {
-                background-color: rgb(64, 64, 64);
-                position: relative;
-                float: right;
-                text-align: center;
-                width: 32.5%;
-                height: 75%;
-                padding-left: 6%;
-                padding-right: 6%;
-                padding-bottom: 6.5%;                
-                margin-top: 3%;
-                margin-left: 1.5%;
-                margin-bottom: 3%;
-                margin-right: 3%;  
-                z-index: 1;                        
-            }  
-            #slide5 {
-                background-color: rgb(64, 64, 64);
-                float:left;
-                position: relative;
-                text-align: center;
-                height: 75%;
-                width: 82%;
-                padding-left: 6%;
-                padding-right: 6%;
-                padding-bottom: 6.5%;                
-                margin-top: 3%;
-                margin-left: 3%;
-                margin-bottom: 3%;
-                margin-right: 3%;  
-                z-index: 1;                        
-            }  
-            #pictures {
-                display: flex;
-                justify-content: center;
-                height:70%;
-            }
-            .myslides1{
-                width:100%;
-                height:100%;
-                object-fit: contain;
-            }
-            .myslides2{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            .myslides3{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            .myslides4{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            .myslides5{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            #buttons {
-                position: absolute;
-                top: 50%;
-                width: 99%;
-                
-            }
-            #buttonleft {
-                position: absolute;
-                left: 1%;
-                padding: 0.5em;
-                font-size: 1.5em;
-            }     
-            #buttonright {
-                position: absolute;
-                right: 1%;
-                padding: 0.5em;
-                font-size: 1.5em;
-            }  
-            #bottomtext {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height:16%;
-            }
-            #footer {
-                width: 100%;
-                height: 6%;
-                background-color: rgb(24, 24, 24);
-                display: flex;
-            }
+                    body {
+                        height: 100%;
+                        margin: 0;
+                        background-color:rgb(18, 18, 18);
+                    }
+                    h1 {
+                        font-size: 7vh;
+                        color: rgb(255,255,255);
+                        font-family:Garamond;
+                    }
+                    h2 {
+                        font-size: 3.8vh;
+                        font-family: Calibri;
+                        color: rgb(179,179,179);
+                        vertical-align: middle;
+                    }
+                    a {
+                        font-size: 3.8vh;
+                        font-family: Calibri;
+                        color: rgb(179,179,179);
+                        vertical-align: middle;
+                    }
+                    h3 {
+                        font-size: 2.35vh;
+                        font-family: Calibri;
+                        color: rgb(179,179,179);
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        z-index: 1000;
+                    }
+                    #TopBar {
+                        width: 100%;
+                        height: 9%;
+                        background-color: rgb(24, 24, 24);
+                        display: flex;
+                        flex-direction: row-reverse;
+                        position: sticky;
+                        top: 0;
+                        z-index: 2;
+                    }
+                    .links {
+                        margin-right: 2%;
+                    }
+                    .email {
+                        background-color: rgb(24, 24, 24);
+                        width: max-content;
+                        height: 100%;
+                        text-align: center;
+                        margin-right: 3%;
+                        border: 0;
+                        padding-top: 4%;
+                    }
+                    .email:hover {
+                        background-color: rgb(40, 40, 40);
+                    }
+                    .resume {
+                        background-color: rgb(24,24,24);
+                        width: max-content;
+                        height: 100%;
+                        text-align: center;
+                        margin-right: 1%;
+                        border: 0;
+                    }
+                    .resume:hover {
+                        background-color: rgb(40, 40, 40);
+                    }
+                    .linkedin {
+                        background-color: rgb(24, 24, 24);
+                        width: max-content;
+                        height: 100%;
+                        text-align: center;
+                        margin-right: 1%;
+                        border:0;
+                    }
+                    .linkedin:hover {
+                        background-color: rgb(40, 40, 40);
+                    }
+                    #title {
+                        text-align: center;
+                        padding-top: 3%;
+                    }
+                    #subtitle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 15%;
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+                    }
+                    #slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
+                        border-radius: 2%;
+                        background-color: rgb(64, 64, 64);
+                        position: relative;
+                        text-align: center;
+                        width: 32.5%;
+                        height: 75%;
+                        padding-top: 3%;
+                        padding-left: 6%;
+                        padding-right: 6%;
+                        padding-bottom: 6.5%;
+                        margin-top: 3%;
+                        margin-left: 3%;
+                        margin-bottom: 3%;
+                        margin-right: 1.5%;
+                        z-index: 1;
+                    }
+                    #slide1, #slide3, #slide5 {
+                        float: left;
+                    }
+                    #slide2, #slide4, #slide6 {
+                        float: right;          
+                    }
+                    #pictures {
+                        border-radius: 10%;
+                        display: flex;
+                        justify-content: center;
+                        height:70%;
+                    }
+                    .myslides1, .myslides2, .myslides3, .myslides4, .myslides5, .myslides6{
+                        width:100%;
+                        height:100%;
+                        object-fit: contain;
+                    }
+                    #buttons {
+                        position: absolute;
+                        top: 50%;
+                        width: 99%;
+                        
+                    }
+                    #buttonleft {
+                        position: absolute;
+                        left: 1%;
+                        padding: 0.5em;
+                        font-size: 1.5em;
+                    }     
+                    #buttonright {
+                        position: absolute;
+                        right: 1%;
+                        padding: 0.5em;
+                        font-size: 1.5em;
+                    }  
+                    #bottomtext {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height:16%;
+                    }
+                    #footer {
+                        width: 100%;
+                        height: 6%;
+                        background-color: rgb(24, 24, 24);
+                        display: flex;
+                    }
 
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -257,147 +185,98 @@
         <h1>
             <div id="title">Zane Shepherd: Online Portfolio</div>
         </h1>
-        <div id="slide5">
-            <div id="subtitle">
-            <h2>Fencing Machine</h2>
-            </div>
-            <div id="pictures">
-            <img class="mySlides5" src="images/TEAM E02_01 DELIVERABLE 9_101024_1.jpg">
-            <img class="mySlides5" src="images/FencingMachine1.jpg">
-            <img class="mySlides5" src="images/FencingMachine2.jpg">
-
-            <div id="buttons">
-                <button id="buttonleft" onclick="plusDivs5(-1)">&#10094;</button>
-                <button id="buttonright" onclick="plusDivs5(+1)">&#10095;</button>
-                </div>
-            </div>
-            <div id="bottomtext">
-            <h3>Second year design project focused exclusively on 3D modeling with no physical build</h3>
-            </div>
-        </div>
-        <script>
-    var slideIndex4 = 1;
-        showDivs5(slideIndex4);
-
-    function plusDivs5(n) {
-    showDivs5(slideIndex4 += n);
-    }
-
-    function showDivs5(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides5");
-    if (n > x.length) {slideIndex4 = 1}
-    if (n < 1) {slideIndex4 = x.length} ;
-    for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-    }
-    x[slideIndex4-1].style.display = "block";
-    }
-        </script>
 
         <div id="slide1">
             <div id="subtitle">
-                <h2>Remote Breaking System</h2>
+            <a href="MultiSpectralTurret/"> Multi Spectral Turret</a>
             </div>
             <div id="pictures">
-                <img class="mySlides1" src="images/rbs1.jpg">
-                <img class="mySlides1" src="images/breakPadStatic.gif">
-                <img class="mySlides1" src="images/rbs2.jpg">
-                <img class="mySlides1" src="images/rbs3.jpg">
-                <img class="mySlides1" src="images/rbs4.gif">
-                <img class="mySlides1" src="images/rbs5.jpg">
-                <img class="mySlides1" src="images/rbs6.jpg">
-                <img class="mySlides1" src="images/rbs7.jpg">
-                <img class="mySlides1" src="images/rbs8.jpg">
-                <div id="buttons">
-                    <button id="buttonleft" onclick="plusDivs1(-1)">&#10094;</button>
-                    <button id="buttonright" onclick="plusDivs1(+1)">&#10095;</button>
-                </div>
+            <img class="mySlides1" src="images/Turret.png">
+
+            <!-- <div id="buttons">
+                <button id="buttonleft" onclick="plusDivs1(-1)">&#10094;</button>
+                <button id="buttonright" onclick="plusDivs1(+1)">&#10095;</button>
+                </div> -->
             </div>
             <div id="bottomtext">
-                <h3>Second year design project focused on integrating physical design and arduino functionality</h3>
+            <h3>4th year capstone project in assosciation with ING Avionics.</h3>
             </div>
         </div>
-        <script>
-            var slideIndex1 = 1;
-                showDivs1(slideIndex1);
+        <!-- <script>
+    var slideIndex1 = 1;
+        showDivs1(slideIndex1);
 
-            function plusDivs1(n) {
-            showDivs1(slideIndex1 += n);
-            }
+    function plusDivs1(n) {
+    showDivs1(slideIndex1 += n);
+    }
 
-            function showDivs1(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides1");
-            if (n > x.length) {slideIndex1 = 1}
-            if (n < 1) {slideIndex1 = x.length} ;
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-            }
-            x[slideIndex1-1].style.display = "block";
-            }
-        </script>
+    function showDivs1(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides1");
+    if (n > x.length) {slideIndex1 = 1}
+    if (n < 1) {slideIndex1 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    x[slideIndex1-1].style.display = "block";
+    }
+        </script> -->
 
         <div id="slide2">
             <div id="subtitle">
-            <h2>Mars Rover</h2>
+            <a href="https://zane-shepherd.github.io/Online-Portfolio/MarsRoverOptimalControl/"> Mars Rover Optimal Control</a>
             </div>
             <div id="pictures">
-            <img class="mySlides2" src="images/End effector prototype.jpg">
-            <img class="mySlides2" src="images/End effector prototype 2.jpg">
-            <img class="mySlides2" src="images/End effector prototype 3.jpg">
-            <img class="mySlides2" src="images/End effector prototype 4.jpg">
+            <img class="mySlides2" src="images/ControllerTuning.gif">
+            <img class="mySlides2" src="images/ControlsMatlab.jpg">
+
+
+
             <div id="buttons">
                 <button id="buttonleft" onclick="plusDivs2(-1)">&#10094;</button>
                 <button id="buttonright" onclick="plusDivs2(+1)">&#10095;</button>
                 </div>
             </div>
             <div id="bottomtext">
-            <h3>Engineering team on which I have helped design the robotic arm and end-effector</h3>
+            <h3>4th year mechatronics project in assosciation with UOttawa Mars Rover.</h3>
             </div>
         </div>
         <script>
-            var slideIndex2 = 1;
-                showDivs2(slideIndex2);
+        var slideIndex2 = 1;
+        showDivs2(slideIndex2);
 
-            function plusDivs2(n) {
-            showDivs2(slideIndex2 += n);
-            }
+        function plusDivs2(n) {
+        showDivs2(slideIndex2 += n);
+        }
 
-            function showDivs2(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides2");
-            if (n > x.length) {slideIndex2 = 1}
-            if (n < 1) {slideIndex2 = x.length} ;
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-            }
-            x[slideIndex2-1].style.display = "block";
-            }
-        </script>   
+        function showDivs2(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides2");
+        if (n > x.length) {slideIndex2 = 1}
+        if (n < 1) {slideIndex2 = x.length} ;
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        x[slideIndex2-1].style.display = "block";
+        }
+        </script>
 
         <div id="slide3">
             <div id="subtitle">
-            <h2>Drone Delivery Service App</h2>
+            <a href="https://zane-shepherd.github.io/Online-Portfolio/MarsRover/"> Mars Rover</a>
             </div>
             <div id="pictures">
-                <img class="mySlides3" src="images/Jamz1.jpg">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (3).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (4).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (5).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (6).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (7).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (8).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (9).gif">
-                <img class="mySlides3" src="images/ezgif.com-gif-maker (10).gif">
-
+            <img class="mySlides3" src="images/End effector prototype.jpg">
+            <img class="mySlides3" src="images/End effector prototype 2.jpg">
+            <img class="mySlides3" src="images/End effector prototype 3.jpg">
+            <img class="mySlides3" src="images/End effector prototype 4.jpg">
             <div id="buttons">
                 <button id="buttonleft" onclick="plusDivs3(-1)">&#10094;</button>
                 <button id="buttonright" onclick="plusDivs3(+1)">&#10095;</button>
                 </div>
             </div>
             <div id="bottomtext">
-                <h3>First year design project focused on JavaScript code and app design</h3>
+            <h3>Engineering team on which I have helped design the robotic arm and end-effector</h3>
             </div>
         </div>
         <script>
@@ -418,8 +297,134 @@
             }
             x[slideIndex3-1].style.display = "block";
             }
+        </script>  
+
+        <div id="slide4">
+            <div id="subtitle">
+            <a href="https://zane-shepherd.github.io/Online-Portfolio/FencingMachine/"> Fencing Machine</a>
+            </div>
+            <div id="pictures">
+            <img class="mySlides4" src="images/TEAM E02_01 DELIVERABLE 9_101024_1.jpg">
+            <img class="mySlides4" src="images/FencingMachine1.jpg">
+            <img class="mySlides4" src="images/FencingMachine2.jpg">
+
+            <div id="buttons">
+                <button id="buttonleft" onclick="plusDivs4(-1)">&#10094;</button>
+                <button id="buttonright" onclick="plusDivs4(+1)">&#10095;</button>
+                </div>
+            </div>
+            <div id="bottomtext">
+            <h3>Second year design project focused exclusively on 3D modeling with no physical build</h3>
+            </div>
+        </div>
+        <script>
+        var slideIndex4 = 1;
+        showDivs4(slideIndex4);
+
+        function plusDivs4(n) {
+        showDivs4(slideIndex4 += n);
+        }
+
+        function showDivs4(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides4");
+        if (n > x.length) {slideIndex4 = 1}
+        if (n < 1) {slideIndex4 = x.length} ;
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        x[slideIndex4-1].style.display = "block";
+        }
+        </script>
+
+        <div id="slide5">
+            <div id="subtitle">
+            <a href="https://zane-shepherd.github.io/Online-Portfolio/DroneDeliveryServiceApp/"> Drone Delivery Service App</a>
+            </div>
+            <div id="pictures">
+                <img class="mySlides5" src="images/Jamz1.jpg">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (3).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (4).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (5).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (6).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (7).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (8).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (9).gif">
+                <img class="mySlides5" src="images/ezgif.com-gif-maker (10).gif">
+
+            <div id="buttons">
+                <button id="buttonleft" onclick="plusDivs5(-1)">&#10094;</button>
+                <button id="buttonright" onclick="plusDivs5(+1)">&#10095;</button>
+                </div>
+            </div>
+            <div id="bottomtext">
+                <h3>First year design project focused on JavaScript code and app design</h3>
+            </div>
+        </div>
+        <script>
+            var slideIndex5 = 1;
+                showDivs5(slideIndex5);
+
+            function plusDivs5(n) {
+            showDivs5(slideIndex5 += n);
+            }
+
+            function showDivs5(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides5");
+            if (n > x.length) {slideIndex5 = 1}
+            if (n < 1) {slideIndex5 = x.length} ;
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex5-1].style.display = "block";
+            }
         </script>   
-        
+
+        <div id="slide6">
+                    <div id="subtitle">
+                        <a href="https://zane-shepherd.github.io/Online-Portfolio/RemoteBreakingSystem/"> Remote Breaking System</a>
+                    </div>
+                    <div id="pictures">
+                        <img class="mySlides6" src="images/rbs1.jpg">
+                        <img class="mySlides6" src="images/breakPadStatic.gif">
+                        <img class="mySlides6" src="images/rbs2.jpg">
+                        <img class="mySlides6" src="images/rbs3.jpg">
+                        <img class="mySlides6" src="images/rbs4.gif">
+                        <img class="mySlides6" src="images/rbs5.jpg">
+                        <img class="mySlides6" src="images/rbs6.jpg">
+                        <img class="mySlides6" src="images/rbs7.jpg">
+                        <img class="mySlides6" src="images/rbs8.jpg">
+                        <div id="buttons">
+                            <button id="buttonleft" onclick="plusDivs6(-1)">&#10094;</button>
+                            <button id="buttonright" onclick="plusDivs6(+1)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div id="bottomtext">
+                        <h3>Second year design project focused on integrating physical design and arduino functionality</h3>
+                    </div>
+        </div>
+        <script>
+                    var slideIndex6 = 1;
+                        showDivs6(slideIndex6);
+
+                    function plusDivs6(n) {
+                    showDivs6(slideIndex6 += n);
+                    }
+
+                    function showDivs6(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides6");
+                    if (n > x.length) {slideIndex6 = 1}
+                    if (n < 1) {slideIndex6 = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                    }
+                    x[slideIndex6-1].style.display = "block";
+                    }
+        </script>
+
+<!--         
         <div id="slide4">
             <div id="subtitle">
             <h2>Temperature Correcting Thermos</h2>
@@ -456,9 +461,7 @@
             }
             x[slideIndex4-1].style.display = "block";
             }
-        </script>
-
-
+        </script> -->
 
         <div id="footer"></div>
     </body>
