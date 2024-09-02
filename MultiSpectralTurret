@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>MultiSpectralTurret</title>
+        <style>
+            body {
+                height: 100%;
+                margin: 0;
+                background-color:rgb(18, 18, 18);
+                overflow-y: auto;
+            }
+            h1 {
+                font-size: 7vh;
+                color: rgb(255,255,255);
+                font-family:Garamond;
+            }
+            h2 {
+                font-size: 3.8vh;
+                font-family: Calibri;
+                color: rgb(179,179,179);
+            }
+            a {
+                font-size: 3.8vh;
+                font-family: Calibri;
+                color: rgb(179,179,179);
+                vertical-align: middle;
+            }
+            h3 {
+                font-size: 2.35vh;
+                font-family: Calibri;
+                color: rgb(179,179,179);
+                margin: 5%;
+                z-index: 1000;
+                align-self: center;
+            }
+            #TopBar {
+                width: 100%;
+                height: 9%;
+                background-color: rgb(24, 24, 24);
+                display: flex;
+                flex-direction: row-reverse;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+            }
+            .links {
+                margin-right: 2%;
+            }
+            .email {
+                background-color: rgb(24, 24, 24);
+                width: max-content;
+                height: 100%;
+                text-align: center;
+                margin-right: 3%;
+                border: 0;
+                padding-top: 4%;
+            }
+            .email:hover {
+                background-color: rgb(40, 40, 40);
+            }
+            .resume {
+                background-color: rgb(24,24,24);
+                width: max-content;
+                height: 100%;
+                text-align: center;
+                margin-right: 1%;
+                border: 0;
+            }
+            .resume:hover {
+                background-color: rgb(40, 40, 40);
+            }
+            .linkedin {
+                background-color: rgb(24, 24, 24);
+                width: max-content;
+                height: 100%;
+                text-align: center;
+                margin-right: 1%;
+                border:0;
+            }
+            .linkedin:hover {
+                background-color: rgb(40, 40, 40);
+            }
+            #title {
+                text-align: center;
+            }
+            #subtitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 15%;
+
+            }
+            #slide {
+                border-radius: 2%;
+                background-color: rgb(64, 64, 64);
+                position: relative;
+                text-align: center;
+                width: 32.5%;
+                height: 75%;
+                padding-top: 3%;
+                padding-left: 6%;
+                padding-right: 6%;
+                padding-bottom: 6.5%;
+                margin-top: 3%;
+                margin-left: 3%;
+                margin-bottom: 3%;
+                margin-right: 1.5%;
+                z-index: 1;
+            }
+
+            #pictures {
+                display: flex;
+                justify-content: center;
+                height:60%;
+            }
+            .myslides1, .myslides2, .myslides3, .myslides4, .myslides5, .myslides6{
+                width:100%;
+                height:100%;
+                object-fit: contain;
+            }
+            #buttons {
+                position: absolute;
+                top: 50%;
+                width: 99%;
+                
+            }
+            #buttonleft {
+                position: absolute;
+                left: 1%;
+                padding: 0.5em;
+                font-size: 1.5em;
+            }     
+            #buttonright {
+                position: absolute;
+                right: 1%;
+                padding: 0.5em;
+                font-size: 1.5em;
+            }  
+            #bottomtext {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #footer {
+                width: 100%;
+                height: 6%;
+                background-color: rgb(24, 24, 24);
+                display: flex;
+            }
+        
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+</html>
+
+<body id="body">
+    <div id="TopBar">
+        <a class="links" href="mailto:zshep015@uottawa.ca">
+            <button class="email">
+                <i class="fa fa-envelope" style="color:rgb(179, 179, 179); font-size: 5.5vh;"></i>
+                <h3>email</h3>
+            </button>
+        </a>
+        <a class="links" href="images/ZaneShepherd_Resume_forGithub.pdf" target="_blank">
+            <button class="resume">
+                <i class="fa fa-file-text" style="color: rgb(179, 179, 179); font-size: 4.9vh; padding-top: 13%;"></i>
+                <h3>resume</h3>
+            </button>
+         </a>
+         <a class="links" href="https://www.linkedin.com/in/zane-shepherd-430322260/" >
+            <button class="linkedin">
+                <i class="fa fa-linkedin-square" style="color: rgb(179, 179, 179); font-size: 4.9vh; padding-top: 13%;"></i>
+                <h3>linkedin</h3>
+            </button>
+        </a>
+    </div>
+    <h1>
+        <div id="title">Multi Spectral Turret</div>
+    </h1>
+        <div id="pictures">
+        <img class="mySlides1" src="images/Turret.png">
+
+        <!-- <div id="buttons">
+            <button id="buttonleft" onclick="plusDivs1(-1)">&#10094;</button>
+            <button id="buttonright" onclick="plusDivs1(+1)">&#10095;</button>
+            </div> -->
+        </div>
+        <div id="bottomtext">
+        <h3>
+            <p>This project is focused on the design, analysis, and optimization of a multispectral turret for ING Robotic Aviation, with the intent of creating a highly efficient, versatile, and precise turret system capable of operating at different spectral ranges. This project addresses the need for advanced surveillance capabilities in variable environments.</p> 
+            <p>Noteworthy characteristics of the turret include a multi-gimbal system which allows many degrees of freedom of pan and tilt, the implementation of a light weight yet durable frame, the implementation of a system which optimizes the thermal management, a damper system which reduces vibrations, and a payload which fully integrates all necessary sensors, cameras, and other required hardware.</p>
+            <p>Design internals cannot be shown as they are protected by an NDA
+        </p>
+        </h3>
+        </div>
+</body>
