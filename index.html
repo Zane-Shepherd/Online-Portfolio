@@ -224,56 +224,17 @@
 
         <div id="slide2">
             <div id="subtitle">
-            <a href="MarsRoverOptimalControl"> Mars Rover Optimal Control</a>
-            </div>
-            <div id="pictures">
-            <img class="mySlides2" src="images/ControllerTuning.gif">
-            <img class="mySlides2" src="images/ControlsMatlab.jpg">
-
-
-
-            <div id="buttons">
-                <button id="buttonleft" onclick="plusDivs2(-1)">&#10094;</button>
-                <button id="buttonright" onclick="plusDivs2(+1)">&#10095;</button>
-                </div>
-            </div>
-            <div id="bottomtext">
-            <h3>4th year mechatronics project in assosciation with UOttawa Mars Rover.</h3>
-            </div>
-        </div>
-        <script>
-        var slideIndex2 = 1;
-        showDivs2(slideIndex2);
-
-        function plusDivs2(n) {
-        showDivs2(slideIndex2 += n);
-        }
-
-        function showDivs2(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides2");
-        if (n > x.length) {slideIndex2 = 1}
-        if (n < 1) {slideIndex2 = x.length} ;
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-        }
-        x[slideIndex2-1].style.display = "block";
-        }
-        </script>
-
-        <div id="slide3">
-            <div id="subtitle">
             <a href="MarsRover"> Mars Rover</a>
             </div>
             <div id="pictures">
-            <img class="mySlides3" src="images/rover.png">
-            <img class="mySlides3" src="images/roboticArm.png">
-            <img class="mySlides3" src="images/endEffector.png">
-            <img class="mySlides3" src="images/Gearbox_assembly.gif">
-            <img class="mySlides3" src="images/cycloidStress.png">
+            <img class="mySlides2" src="images/rover.png">
+            <img class="mySlides2" src="images/roboticArm.png">
+            <img class="mySlides2" src="images/endEffector.png">
+            <img class="mySlides2" src="images/Gearbox_assembly.gif">
+            <img class="mySlides2" src="images/cycloidStress.png">
             <div id="buttons">
-                <button id="buttonleft" onclick="plusDivs3(-1)">&#10094;</button>
-                <button id="buttonright" onclick="plusDivs3(+1)">&#10095;</button>
+                <button id="buttonleft" onclick="plusDivs2(-1)">&#10094;</button>
+                <button id="buttonright" onclick="plusDivs2(+1)">&#10095;</button>
                 </div>
             </div>
             <div id="bottomtext">
@@ -281,24 +242,64 @@
             </div>
         </div>
         <script>
-            var slideIndex3 = 1;
-                showDivs3(slideIndex3);
+            var slideIndex2 = 1;
+                showDivs2(slideIndex2);
 
-            function plusDivs3(n) {
-            showDivs3(slideIndex3 += n);
+            function plusDivs2(n) {
+            showDivs2(slideIndex2 += n);
             }
 
-            function showDivs3(n) {
+            function showDivs2(n) {
                 var i;
-                var x = document.getElementsByClassName("mySlides3");
-            if (n > x.length) {slideIndex3 = 1}
-            if (n < 1) {slideIndex3 = x.length} ;
+                var x = document.getElementsByClassName("mySlides2");
+            if (n > x.length) {slideIndex2 = 1}
+            if (n < 1) {slideIndex2 = x.length} ;
             for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
             }
-            x[slideIndex3-1].style.display = "block";
+            x[slideIndex2-1].style.display = "block";
             }
         </script>  
+
+        <div id="slide3">
+            <div id="subtitle">
+            <a href="MarsRoverOptimalControl"> Mars Rover Optimal Control</a>
+            </div>
+            <div id="pictures">
+            <img class="mySlides3" src="images/ControllerTuning.gif">
+            <img class="mySlides3" src="images/ControlsMatlab.jpg">
+
+
+
+            <div id="buttons">
+                <button id="buttonleft" onclick="plusDivs3(-1)">&#10094;</button>
+                <button id="buttonright" onclick="plusDivs3(+1)">&#10095;</button>
+                </div>
+            </div>
+            <div id="bottomtext">
+            <h3>4th year mechatronics project in assosciation with UOttawa Mars Rover.</h3>
+            </div>
+        </div>
+        <script>
+        var slideIndex3 = 1;
+        showDivs3(slideIndex3);
+
+        function plusDivs3(n) {
+        showDivs3(slideIndex3 += n);
+        }
+
+        function showDivs3(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides3");
+        if (n > x.length) {slideIndex3 = 1}
+        if (n < 1) {slideIndex3 = x.length} ;
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        x[slideIndex3-1].style.display = "block";
+        }
+        </script>
+
 
         <div id="slide4">
             <div id="subtitle">
