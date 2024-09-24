@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <title>RemoteBreakingSystem</title>
+        <style>
+            body {
+                height: 100%;
+                margin: 0;
+                background-color:rgb(18, 18, 18);
+                overflow-y: auto;
+            }
+            h1 {
+                font-size: 7vh;
+                color: rgb(255,255,255);
+                font-family:Garamond;
+            }
+            h2 {
+                font-size: 3.8vh;
+                font-family: Calibri;
+                color: rgb(179,179,179);
+            }
+            a {
+                font-size: 3.8vh;
+                font-family: Calibri;
+                color: rgb(179,179,179);
+                vertical-align: middle;
+            }
+            h3 {
+                font-size: 2.35vh;
+                font-family: Calibri;
+                color: rgb(179,179,179);
+                margin-top: 1%;
+                margin-right: 5%;
+                margin-left: 5%;
+                z-index: 1000;
+                align-self: center;
+            }
+            #TopBar {
+                width: 100%;
+                height: 9%;
+                background-color: rgb(24, 24, 24);
+                display: flex;
+                flex-direction: row-reverse;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+            }
+            .links {
+                margin-right: 2%;
+            }
+            .email {
+                background-color: rgb(24, 24, 24);
+                width: max-content;
+                height: 100%;
+                text-align: center;
+                margin-right: 3%;
+                border: 0;
+                padding-top: 4%;
+            }
+            .email:hover {
+                background-color: rgb(40, 40, 40);
+            }
+            .resume {
+                background-color: rgb(24,24,24);
+                width: max-content;
+                height: 100%;
+                text-align: center;
+                margin-right: 1%;
+                border: 0;
+            }
+            .resume:hover {
+                background-color: rgb(40, 40, 40);
+            }
+            .linkedin {
+                background-color: rgb(24, 24, 24);
+                width: max-content;
+                height: 100%;
+                text-align: center;
+                margin-right: 1%;
+                border:0;
+            }
+            .linkedin:hover {
+                background-color: rgb(40, 40, 40);
+            }
+            #title {
+                text-align: center;
+                margin: 1% 2%;
+            }
+            #subtitle {
+                display: flex;
+                justify-content: center;
+                font-size: 2.2vh;
+                font-family: Calibri;
+                font-style: italic;
+                margin-top: 1.5%;
+                margin-bottom: 3%;
+                text-align: center;
+                color: rgb(179,179,179);
+                padding: 0 2%; /* Adds horizontal padding to prevent overflow */
+                box-sizing: border-box; /* Ensures padding is included in the width */
+                max-width: 100%; /* Ensures subtitle does not exceed the width of the parent */
+                margin: 1.5% 0 3%; /* Top and bottom margins */
+
+            }
+            #slide {
+                border-radius: 2%;
+                background-color: rgb(64, 64, 64);
+                position: relative;
+                text-align: center;
+                width: 32.5%;
+                height: 75%;
+                padding-top: 3%;
+                padding-left: 6%;
+                padding-right: 6%;
+                padding-bottom: 6.5%;
+                margin-top: 3%;
+                margin-left: 3%;
+                margin-bottom: 3%;
+                margin-right: 1.5%;
+                z-index: 1;
+            }
+
+            #pictures {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 60%;
+                max-height: 100%;
+                width: auto;
+                max-width: 100%;
+                margin-left: 10%;
+                margin-right: 10%;
+                position: relative;
+                box-sizing: border-box;
+            }
+            .myslides1, .myslides2, .myslides3, .myslides4, .myslides5, .myslides6{
+                display: flex;
+                height:100%;
+                width:auto;
+                max-width: 80%;
+                object-fit:contain;
+                overflow: hidden;                
+            }
+            #buttons {
+                display: flex; 
+                position: absolute;
+                top: 0;  /* Set top to 0 */
+                width: 90%;
+                height: 100%;  /* Match the height of the container */
+                display: flex;  /* Use Flexbox to align items */
+                justify-content: space-between;  /* Space buttons evenly left and right */
+                align-items: center;  /* Vertically center the buttons */
+                }
+            #buttonleft, #buttonright {
+                padding: 0.5em;
+                font-size: 1.5em;
+                overflow: hidden;
+            }     
+
+            #bottomtext {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #footer {
+                width: 100%;
+                height: 6%;
+                background-color: rgb(24, 24, 24);
+                display: flex;
+            }
+        
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body id="body">
+        <div id="TopBar">
+            <a class="links" href="mailto:zshep015@uottawa.ca">
+                <button class="email">
+                    <i class="fa fa-envelope" style="color:rgb(179, 179, 179); font-size: 5.5vh;"></i>
+                    <h3>email</h3>
+                </button>
+            </a>
+            <a class="links" href="images/ZaneShepherd_Resume_forGithub.pdf" target="_blank">
+                <button class="resume">
+                    <i class="fa fa-file-text" style="color: rgb(179, 179, 179); font-size: 4.9vh; padding-top: 13%;"></i>
+                    <h3>resume</h3>
+                </button>
+            </a>
+            <a class="links" href="https://www.linkedin.com/in/zane-shepherd-430322260/" >
+                <button class="linkedin">
+                    <i class="fa fa-linkedin-square" style="color: rgb(179, 179, 179); font-size: 4.9vh; padding-top: 13%;"></i>
+                    <h3>linkedin</h3>
+                </button>
+            </a>
+        </div>
+        <h1>
+            <div id="title">Remote Breaking System</div>
+        </h1>
+        <div id="pictures">
+            <img class="mySlides2" src="images/rbs1.jpg">
+            <img class="mySlides2" src="images/breakPadStatic.gif">
+            <img class="mySlides2" src="images/rbs2.jpg">
+            <img class="mySlides2" src="images/rbs3.jpg">
+            <img class="mySlides2" src="images/rbs4.gif">
+            <img class="mySlides2" src="images/rbs5.jpg">
+            <img class="mySlides2" src="images/rbs6.jpg">
+            <img class="mySlides2" src="images/rbs7.jpg">
+            <img class="mySlides2" src="images/rbs8.jpg">
+
+            <div id="subtitle"></div>
+
+            <div id="buttons">
+                <button id="buttonleft" onclick="plusDivs2(-1)">&#10094;</button>
+                <button id="buttonright" onclick="plusDivs2(+1)">&#10095;</button>
+            </div>
+        </div>
+
+
+        <script>
+            var slideIndex2 = 1;
+            var subtitles = [
+                "CAD model of the breaking system against a wheel",
+                "Static stress analysis of the break pad simulated in SolidWorks",
+                "3D-printed breaking system attached to the walker which it was designed for",
+                "Top view of the system, without the cables attached",
+                "Video of the break system as it is actioned remotely",
+                "Internals of the levering system",
+                "Outer view of the levering system",
+                "Internals of the remote control to communicate with the levering system",
+                "Outer view of the remote control"
+            ];
+
+            showDivs2(slideIndex2);
+    
+            function plusDivs2(n) {
+            showDivs2(slideIndex2 += n);
+            }
+    
+            function showDivs2(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            if (n > x.length) {slideIndex2 = 1}
+            if (n < 1) {slideIndex2 = x.length} ;
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex2-1].style.display = "block";
+            
+            document.getElementById("subtitle").innerText = subtitles[slideIndex2 - 1];
+                }
+            </script>
+        <div id="bottomtext">
+            <h3> This design project, created in my secod year of university, was assosciated with a client who desired a remote controlled breaking system that he could attach to his son's walker, in order to prevent any accidents resulting from the loss of control while walking. 
+            <p> The design was modeled and analyzed in SolidWorks, before being created using additive manufacturing processes so that it could be attached to the walker. </p>
+            </h3>
+        </div>
+    </body>
+</html>
